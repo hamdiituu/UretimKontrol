@@ -1,0 +1,22 @@
+﻿USE [1411008020]
+GO
+
+/****** Object:  Table [dbo].[UrunTbl]    Script Date: 12.05.2020 02:26:34 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[UrunTbl](
+	[urun_id] [int] IDENTITY(1,1) NOT NULL,
+	[urun_adi] [varchar](50) NOT NULL,
+	[urun_kategori] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_UrunTbl] PRIMARY KEY CLUSTERED 
+(
+	[urun_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+

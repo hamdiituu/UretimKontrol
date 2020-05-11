@@ -81,5 +81,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="SQL\personelTbl.txt" />
+    <Content Include="SQL\urunTbl.txt" />
+    <Content Include="SQL\UretimTBL.txt" />
+    <Content Include="SQL\makinetbl.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,46 @@
+﻿USE [1411008020]
+GO
+
+/****** Object:  Table [dbo].[UretimTbl]    Script Date: 12.05.2020 02:26:07 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[UretimTbl](
+	[uretim_id] [int] IDENTITY(1,1) NOT NULL,
+	[urun_id] [int] NOT NULL,
+	[personel_id] [int] NOT NULL,
+	[makine_id] [int] NOT NULL,
+	[uretim_tarih] [date] NOT NULL,
+	[uretim_adet] [int] NOT NULL,
+ CONSTRAINT [PK_UretimTbl] PRIMARY KEY CLUSTERED 
+(
+	[uretim_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[UretimTbl]  WITH CHECK ADD  CONSTRAINT [FK_UretimTbl_MakineTbl] FOREIGN KEY([makine_id])
+REFERENCES [dbo].[MakineTbl] ([makine_id])
+GO
+
+ALTER TABLE [dbo].[UretimTbl] CHECK CONSTRAINT [FK_UretimTbl_MakineTbl]
+GO
+
+ALTER TABLE [dbo].[UretimTbl]  WITH CHECK ADD  CONSTRAINT [FK_UretimTbl_PersonelTbl] FOREIGN KEY([personel_id])
+REFERENCES [dbo].[PersonelTbl] ([personel_id])
+GO
+
+ALTER TABLE [dbo].[UretimTbl] CHECK CONSTRAINT [FK_UretimTbl_PersonelTbl]
+GO
+
+ALTER TABLE [dbo].[UretimTbl]  WITH CHECK ADD  CONSTRAINT [FK_UretimTbl_UrunTbl] FOREIGN KEY([urun_id])
+REFERENCES [dbo].[UrunTbl] ([urun_id])
+GO
+
+ALTER TABLE [dbo].[UretimTbl] CHECK CONSTRAINT [FK_UretimTbl_UrunTbl]
+GO
+
+

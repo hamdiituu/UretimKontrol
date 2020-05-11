@@ -54,19 +54,33 @@
             this.personelGrid = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.makineGrid = new System.Windows.Forms.DataGridView();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.personelSoyadi = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.personelEkle = new System.Windows.Forms.Button();
+            this.personelAdi = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.makineAdi = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.makineEkle = new System.Windows.Forms.Button();
+            this.makineMarka = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.urunGrid)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uretimGrid)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.personelGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.makineGrid)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // urunGrid
             // 
             this.urunGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.urunGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.urunGrid.Location = new System.Drawing.Point(44, 81);
+            this.urunGrid.Location = new System.Drawing.Point(44, 52);
             this.urunGrid.Name = "urunGrid";
             this.urunGrid.Size = new System.Drawing.Size(328, 150);
             this.urunGrid.TabIndex = 0;
@@ -100,9 +114,9 @@
             this.groupBox1.Controls.Add(this.uretimEkleBtn);
             this.groupBox1.Controls.Add(this.uretimUrunId);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(753, 268);
+            this.groupBox1.Location = new System.Drawing.Point(753, 210);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(352, 264);
+            this.groupBox1.Size = new System.Drawing.Size(352, 238);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Üretim Girişi";
@@ -200,7 +214,7 @@
             // 
             // urunEkleBtn
             // 
-            this.urunEkleBtn.Location = new System.Drawing.Point(111, 204);
+            this.urunEkleBtn.Location = new System.Drawing.Point(132, 153);
             this.urunEkleBtn.Name = "urunEkleBtn";
             this.urunEkleBtn.Size = new System.Drawing.Size(75, 23);
             this.urunEkleBtn.TabIndex = 4;
@@ -212,7 +226,7 @@
             // 
             this.uretimGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.uretimGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.uretimGrid.Location = new System.Drawing.Point(397, 81);
+            this.uretimGrid.Location = new System.Drawing.Point(397, 52);
             this.uretimGrid.Name = "uretimGrid";
             this.uretimGrid.Size = new System.Drawing.Size(708, 150);
             this.uretimGrid.TabIndex = 5;
@@ -224,9 +238,9 @@
             this.groupBox2.Controls.Add(this.urunEkleBtn);
             this.groupBox2.Controls.Add(this.urunAdiTxt);
             this.groupBox2.Controls.Add(this.urunAdiLbl);
-            this.groupBox2.Location = new System.Drawing.Point(397, 268);
+            this.groupBox2.Location = new System.Drawing.Point(397, 210);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(325, 264);
+            this.groupBox2.Size = new System.Drawing.Size(325, 185);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ürün Girişi";
@@ -250,7 +264,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(41, 52);
+            this.label7.Location = new System.Drawing.Point(41, 28);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 13);
             this.label7.TabIndex = 7;
@@ -259,7 +273,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(532, 52);
+            this.label8.Location = new System.Drawing.Point(394, 28);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 13);
             this.label8.TabIndex = 8;
@@ -268,7 +282,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(41, 265);
+            this.label9.Location = new System.Drawing.Point(41, 232);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(83, 13);
             this.label9.TabIndex = 10;
@@ -278,7 +292,7 @@
             // 
             this.personelGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.personelGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.personelGrid.Location = new System.Drawing.Point(44, 294);
+            this.personelGrid.Location = new System.Drawing.Point(44, 260);
             this.personelGrid.Name = "personelGrid";
             this.personelGrid.Size = new System.Drawing.Size(328, 150);
             this.personelGrid.TabIndex = 9;
@@ -286,7 +300,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(41, 475);
+            this.label10.Location = new System.Drawing.Point(41, 435);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(77, 13);
             this.label10.TabIndex = 12;
@@ -296,16 +310,130 @@
             // 
             this.makineGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.makineGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.makineGrid.Location = new System.Drawing.Point(44, 504);
+            this.makineGrid.Location = new System.Drawing.Point(44, 481);
             this.makineGrid.Name = "makineGrid";
             this.makineGrid.Size = new System.Drawing.Size(328, 150);
             this.makineGrid.TabIndex = 11;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.personelSoyadi);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.personelEkle);
+            this.groupBox3.Controls.Add(this.personelAdi);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Location = new System.Drawing.Point(397, 414);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(325, 185);
+            this.groupBox3.TabIndex = 13;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Personel Girişi";
+            // 
+            // personelSoyadi
+            // 
+            this.personelSoyadi.Location = new System.Drawing.Point(111, 106);
+            this.personelSoyadi.Name = "personelSoyadi";
+            this.personelSoyadi.Size = new System.Drawing.Size(173, 20);
+            this.personelSoyadi.TabIndex = 6;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(29, 109);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(83, 13);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Personel Soyadı";
+            // 
+            // personelEkle
+            // 
+            this.personelEkle.Location = new System.Drawing.Point(132, 153);
+            this.personelEkle.Name = "personelEkle";
+            this.personelEkle.Size = new System.Drawing.Size(110, 23);
+            this.personelEkle.TabIndex = 4;
+            this.personelEkle.Text = "Personel Kaydı";
+            this.personelEkle.UseVisualStyleBackColor = true;
+            this.personelEkle.Click += new System.EventHandler(this.personelEkle_Click);
+            // 
+            // personelAdi
+            // 
+            this.personelAdi.Location = new System.Drawing.Point(111, 65);
+            this.personelAdi.Name = "personelAdi";
+            this.personelAdi.Size = new System.Drawing.Size(173, 20);
+            this.personelAdi.TabIndex = 2;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(29, 68);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(66, 13);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Personel Adi";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.makineAdi);
+            this.groupBox4.Controls.Add(this.label13);
+            this.groupBox4.Controls.Add(this.makineEkle);
+            this.groupBox4.Controls.Add(this.makineMarka);
+            this.groupBox4.Controls.Add(this.label14);
+            this.groupBox4.Location = new System.Drawing.Point(753, 467);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(325, 185);
+            this.groupBox4.TabIndex = 14;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Makine Girişi";
+            // 
+            // makineAdi
+            // 
+            this.makineAdi.Location = new System.Drawing.Point(111, 106);
+            this.makineAdi.Name = "makineAdi";
+            this.makineAdi.Size = new System.Drawing.Size(173, 20);
+            this.makineAdi.TabIndex = 6;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(29, 109);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(60, 13);
+            this.label13.TabIndex = 5;
+            this.label13.Text = "Makine Adı";
+            // 
+            // makineEkle
+            // 
+            this.makineEkle.Location = new System.Drawing.Point(132, 153);
+            this.makineEkle.Name = "makineEkle";
+            this.makineEkle.Size = new System.Drawing.Size(103, 23);
+            this.makineEkle.TabIndex = 4;
+            this.makineEkle.Text = "Makine Kaydı";
+            this.makineEkle.UseVisualStyleBackColor = true;
+            this.makineEkle.Click += new System.EventHandler(this.makineEkle_Click);
+            // 
+            // makineMarka
+            // 
+            this.makineMarka.Location = new System.Drawing.Point(111, 65);
+            this.makineMarka.Name = "makineMarka";
+            this.makineMarka.Size = new System.Drawing.Size(173, 20);
+            this.makineMarka.TabIndex = 2;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(29, 68);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(75, 13);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "Makine Marka";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1164, 683);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.makineGrid);
             this.Controls.Add(this.label9);
@@ -327,6 +455,10 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.personelGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.makineGrid)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,6 +492,18 @@
         private System.Windows.Forms.DataGridView personelGrid;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView makineGrid;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox personelSoyadi;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button personelEkle;
+        private System.Windows.Forms.TextBox personelAdi;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox makineAdi;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button makineEkle;
+        private System.Windows.Forms.TextBox makineMarka;
+        private System.Windows.Forms.Label label14;
     }
 }
 

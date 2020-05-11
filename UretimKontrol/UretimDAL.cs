@@ -118,5 +118,47 @@ namespace UretimKontrol
             connect.Close();
 
         }
+
+        public void PersonelEkle(string personelAdi,string personelSoyadi)
+        {
+            if (connect.State == System.Data.ConnectionState.Closed)
+            {
+                connect.Open();
+
+            }
+
+            SqlCommand sqlCommand = new SqlCommand("Insert into PersonelTbl values(@Adi,@Soyadi)", connect);
+
+            sqlCommand.Parameters.AddWithValue("@Adi", personelAdi);
+
+            sqlCommand.Parameters.AddWithValue("@Soyadi", personelSoyadi);
+
+
+            sqlCommand.ExecuteNonQuery();
+
+            connect.Close();
+
+        }
+
+        public void MakineEkle(string makineMarka,string makineAdi)
+        {
+            if (connect.State == System.Data.ConnectionState.Closed)
+            {
+                connect.Open();
+
+            }
+
+            SqlCommand sqlCommand = new SqlCommand("Insert into MakineTbl values(@Marka,@Adi)", connect);
+
+            sqlCommand.Parameters.AddWithValue("@Adi", makineAdi);
+
+            sqlCommand.Parameters.AddWithValue("@Marka", makineMarka);
+
+
+            sqlCommand.ExecuteNonQuery();
+
+            connect.Close();
+
+        }
     }
 }

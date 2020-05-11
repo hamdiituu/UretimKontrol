@@ -73,6 +73,38 @@ namespace UretimKontrol
 
         }
 
-        
+        private void personelEkle_Click(object sender, EventArgs e)
+        {
+           
+
+            UretimDAL uretim = new UretimDAL();
+
+            string adi = personelAdi.Text;
+            string soyadi = personelSoyadi.Text;
+
+            uretim.PersonelEkle(adi,soyadi);
+   
+
+            personelGrid.DataSource = uretim.GetPersonel();
+
+            MessageBox.Show("Personel Eklendi !");
+
+        }
+
+        private void makineEkle_Click(object sender, EventArgs e)
+        {
+
+
+            UretimDAL uretim = new UretimDAL();
+
+            string marka = makineMarka.Text;
+            string adi = makineAdi.Text;
+
+            uretim.MakineEkle(marka, adi);
+
+            makineGrid.DataSource = uretim.GetMakine();
+
+            MessageBox.Show("Makine Eklendi!");
+        }
     }
 }
